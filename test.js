@@ -1,5 +1,6 @@
 const CDP = require('chrome-remote-interface')
-const projectData = require('./test-data.json')
+console.log('Loadgin test', process.argv[2])
+const projectData = require(process.argv[2])
 
 CDP(async (client) => {
   const {Page, DOM, Runtime} = client
@@ -9,6 +10,14 @@ CDP(async (client) => {
   await DOM.enable()
 
   console.log('Navigating to http://localhost:8080/')
+  await Page.navigate({url: 'about:blank'})
+  await Runtime.evaluate({
+    expression: `
+      (async () => {
+        localStorage.clear()
+      })();
+    `
+  })
   await Page.navigate({url: 'http://localhost:8080/'})
   await Page.loadEventFired()
 
@@ -23,10 +32,10 @@ CDP(async (client) => {
           await editor.loadProjectData(${JSON.stringify(projectData)});
           editor.runCommand('data-source:refresh')
           console.log('RESULT:', editor.getWrapper().view.el.innerHTML);
-          localStorage.clear()
         } catch (e) {
           console.error('EVAL ERROR:', e);
         }
+        localStorage.clear()
       })();
     `
   })

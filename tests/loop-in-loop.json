@@ -1,0 +1,525 @@
+{
+  "dataSources": [],
+  "assets": [],
+  "styles": [
+    {
+      "selectors": [
+        "#if13"
+      ],
+      "style": {
+        "padding": "10px 10px 10px 10px",
+        "margin": "10px 10px 10px 10px",
+        "background-color": "#f3fff8"
+      }
+    },
+    {
+      "selectors": [
+        "#iw66"
+      ],
+      "style": {}
+    },
+    {
+      "selectors": [
+        "#io6w"
+      ],
+      "style": {}
+    },
+    {
+      "selectors": [
+        "#ikhi"
+      ],
+      "style": {}
+    },
+    {
+      "selectors": [
+        "#ig96z"
+      ],
+      "style": {}
+    },
+    {
+      "selectors": [
+        "#iqhtl"
+      ],
+      "style": {}
+    },
+    {
+      "selectors": [
+        "#iy7mq"
+      ],
+      "style": {}
+    },
+    {
+      "selectors": [
+        "#i7nt4"
+      ],
+      "style": {}
+    },
+    {
+      "selectors": [
+        "#iykyr"
+      ],
+      "style": {}
+    },
+    {
+      "selectors": [
+        "#ijn8f"
+      ],
+      "style": {}
+    },
+    {
+      "selectors": [
+        "#iwnf2"
+      ],
+      "style": {}
+    },
+    {
+      "selectors": [
+        "#iwg4f"
+      ],
+      "style": {}
+    },
+    {
+      "selectors": [
+        "#ie65g"
+      ],
+      "style": {}
+    },
+    {
+      "selectors": [
+        "#ihskr"
+      ],
+      "style": {}
+    },
+    {
+      "selectors": [
+        "#ieccz"
+      ],
+      "style": {}
+    },
+    {
+      "selectors": [
+        "#io9q"
+      ],
+      "style": {}
+    },
+    {
+      "selectors": [
+        "#ia07"
+      ],
+      "wrapper": 1,
+      "style": {}
+    },
+    {
+      "selectors": [
+        "#i2g4j"
+      ],
+      "style": {}
+    }
+  ],
+  "pages": [
+    {
+      "frames": [
+        {
+          "component": {
+            "type": "wrapper",
+            "stylable": [
+              "background",
+              "background-color",
+              "background-image",
+              "background-repeat",
+              "background-attachment",
+              "background-position",
+              "background-size"
+            ],
+            "attributes": {
+              "id": "ia07"
+            },
+            "components": [
+              {
+                "tagName": "p",
+                "type": "text",
+                "attributes": {
+                  "id": "io6w"
+                },
+                "components": [
+                  {
+                    "type": "textnode",
+                    "content": "For this test I configured the plugin with a demo country API:\n          https://studio.apollographql.com/public/countries/variant/current/home aaaa aaa"
+                  }
+                ]
+              },
+              {
+                "tagName": "p",
+                "type": "text",
+                "attributes": {
+                  "id": "i2g4j"
+                },
+                "components": [
+                  {
+                    "type": "textnode",
+                    "content": "For this test I configured the plugin with a demo country API:\n          https://studio.apollographql.com/public/countries/variant/current/home aaaa aaa"
+                  }
+                ]
+              },
+              {
+                "attributes": {
+                  "id": "if13"
+                },
+                "components": [
+                  {
+                    "tagName": "h1",
+                    "type": "text",
+                    "attributes": {
+                      "id": "iw66"
+                    },
+                    "components": [
+                      {
+                        "type": "textnode",
+                        "content": "About this demo"
+                      }
+                    ],
+                    "privateStates": [
+                      {
+                        "id": "innerHTML",
+                        "expression": [
+                          {
+                            "type": "state",
+                            "storedStateId": "__data",
+                            "componentId": "if13-4094",
+                            "previewIndex": 0,
+                            "exposed": false,
+                            "forceKind": "object",
+                            "label": "Loop data (Country)"
+                          },
+                          {
+                            "options": {
+                              "lang": ""
+                            },
+                            "type": "property",
+                            "propType": "field",
+                            "fieldId": "name",
+                            "label": "name",
+                            "typeIds": [
+                              "String"
+                            ],
+                            "dataSourceId": "countries",
+                            "kind": "scalar",
+                            "previewIndex": 0
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tagName": "p",
+                    "attributes": {
+                      "id": "io9q"
+                    },
+                    "components": [
+                      {
+                        "tagName": "strong",
+                        "type": "text",
+                        "attributes": {
+                          "id": "ikhi"
+                        },
+                        "components": [
+                          {
+                            "type": "textnode",
+                            "content": "Select a component and check it's settings on the right"
+                          }
+                        ]
+                      },
+                      {
+                        "tagName": "strong",
+                        "type": "text",
+                        "attributes": {
+                          "id": "iy7mq"
+                        },
+                        "components": [
+                          {
+                            "type": "textnode",
+                            "content": "Select a component and check it's settings on the right"
+                          }
+                        ]
+                      },
+                      {
+                        "tagName": "strong",
+                        "type": "text",
+                        "attributes": {
+                          "id": "iqhtl"
+                        },
+                        "components": [
+                          {
+                            "type": "textnode",
+                            "content": "Select a component and check it's settings on the right"
+                          }
+                        ]
+                      },
+                      {
+                        "tagName": "strong",
+                        "type": "text",
+                        "attributes": {
+                          "id": "ig96z"
+                        },
+                        "components": [
+                          {
+                            "type": "textnode",
+                            "content": "Select a component and check it's settings on the right"
+                          }
+                        ]
+                      }
+                    ],
+                    "privateStates": [
+                      {
+                        "id": "condition",
+                        "expression": [
+                          {
+                            "type": "state",
+                            "storedStateId": "__data",
+                            "componentId": "if13-4094",
+                            "previewIndex": 0,
+                            "exposed": false,
+                            "forceKind": "object",
+                            "label": "Loop data (Country)"
+                          },
+                          {
+                            "options": {
+                              "lang": ""
+                            },
+                            "type": "property",
+                            "propType": "field",
+                            "fieldId": "name",
+                            "label": "name",
+                            "typeIds": [
+                              "String"
+                            ],
+                            "dataSourceId": "countries",
+                            "kind": "scalar",
+                            "previewIndex": 0
+                          }
+                        ]
+                      }
+                    ],
+                    "conditionOperator": "falsy"
+                  },
+                  {
+                    "tagName": "p",
+                    "type": "text",
+                    "attributes": {
+                      "id": "ieccz"
+                    },
+                    "components": [
+                      {
+                        "type": "textnode",
+                        "content": "This plugin lets you set \"states\" on components with the data coming from the API"
+                      }
+                    ],
+                    "privateStates": [
+                      {
+                        "id": "__data",
+                        "expression": [
+                          {
+                            "type": "state",
+                            "storedStateId": "__data",
+                            "componentId": "if13-4094",
+                            "previewIndex": 0,
+                            "exposed": false,
+                            "forceKind": "object",
+                            "label": "Loop data (Country)"
+                          },
+                          {
+                            "type": "property",
+                            "propType": "field",
+                            "fieldId": "states",
+                            "label": "states",
+                            "typeIds": [
+                              "State"
+                            ],
+                            "dataSourceId": "countries",
+                            "kind": "list",
+                            "options": {},
+                            "previewIndex": 0
+                          }
+                        ]
+                      },
+                      {
+                        "id": "innerHTML",
+                        "expression": [
+                          {
+                            "type": "state",
+                            "storedStateId": "__data",
+                            "componentId": "ieccz-843",
+                            "previewIndex": 0,
+                            "exposed": false,
+                            "forceKind": "object",
+                            "label": "Loop data (State)"
+                          },
+                          {
+                            "type": "property",
+                            "propType": "field",
+                            "fieldId": "name",
+                            "label": "name",
+                            "typeIds": [
+                              "String"
+                            ],
+                            "dataSourceId": "countries",
+                            "kind": "scalar",
+                            "options": {},
+                            "previewIndex": 0
+                          }
+                        ]
+                      },
+                      {
+                        "id": "condition",
+                        "expression": [
+                          {
+                            "type": "property",
+                            "propType": "field",
+                            "fieldId": "fixed",
+                            "label": "Fixed value",
+                            "kind": "scalar",
+                            "typeIds": [
+                              "String"
+                            ],
+                            "options": {
+                              "value": "test"
+                            },
+                            "previewIndex": 0
+                          }
+                        ]
+                      }
+                    ],
+                    "id-plugin-data-source": "ieccz-843"
+                  },
+                  {
+                    "tagName": "strong",
+                    "type": "text",
+                    "attributes": {
+                      "id": "ihskr"
+                    },
+                    "components": [
+                      {
+                        "type": "textnode",
+                        "content": "Select a component and check it's settings on the right"
+                      }
+                    ]
+                  },
+                  {
+                    "tagName": "strong",
+                    "type": "text",
+                    "attributes": {
+                      "id": "ie65g"
+                    },
+                    "components": [
+                      {
+                        "type": "textnode",
+                        "content": "Select a component and check it's settings on the right"
+                      }
+                    ]
+                  },
+                  {
+                    "tagName": "strong",
+                    "type": "text",
+                    "attributes": {
+                      "id": "iwg4f"
+                    },
+                    "components": [
+                      {
+                        "type": "textnode",
+                        "content": "Select a component and check it's settings on the right"
+                      }
+                    ]
+                  },
+                  {
+                    "tagName": "strong",
+                    "type": "text",
+                    "attributes": {
+                      "id": "iwnf2"
+                    },
+                    "components": [
+                      {
+                        "type": "textnode",
+                        "content": "Select a component and check it's settings on the right"
+                      }
+                    ]
+                  },
+                  {
+                    "tagName": "strong",
+                    "type": "text",
+                    "attributes": {
+                      "id": "ijn8f"
+                    },
+                    "components": [
+                      {
+                        "type": "textnode",
+                        "content": "Select a component and check it's settings on the right"
+                      }
+                    ]
+                  },
+                  {
+                    "tagName": "strong",
+                    "type": "text",
+                    "attributes": {
+                      "id": "iykyr"
+                    },
+                    "components": [
+                      {
+                        "type": "textnode",
+                        "content": "Select a component and check it's settings on the right"
+                      }
+                    ]
+                  },
+                  {
+                    "tagName": "strong",
+                    "type": "text",
+                    "attributes": {
+                      "id": "i7nt4"
+                    },
+                    "components": [
+                      {
+                        "type": "textnode",
+                        "content": "Select a component and check it's settings on the right"
+                      }
+                    ]
+                  }
+                ],
+                "privateStates": [
+                  {
+                    "id": "__data",
+                    "expression": [
+                      {
+                        "options": {
+                          "filter": "{}"
+                        },
+                        "type": "property",
+                        "propType": "field",
+                        "fieldId": "countries",
+                        "label": "countries",
+                        "typeIds": [
+                          "Country"
+                        ],
+                        "dataSourceId": "countries",
+                        "kind": "list",
+                        "previewIndex": 0
+                      }
+                    ]
+                  }
+                ],
+                "id-plugin-data-source": "if13-4094"
+              }
+            ],
+            "head": {
+              "type": "head"
+            },
+            "docEl": {
+              "tagName": "html"
+            }
+          },
+          "id": "GsGyNXjnoxVjAGPZ"
+        }
+      ],
+      "id": "pyDz2UVv97RasYOK"
+    }
+  ],
+  "symbols": []
+}
