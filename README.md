@@ -1,6 +1,6 @@
-# GrapesJS Vibe Coding Setup
+# GrapesJS Vibe Coding
 
-A Chrome DevTools Protocol automation tool for **vibe coding** GrapesJS projects. With this tool, the AI (tested with Claude Code) can load test websites in GrapesJS and inspect the generated HTML output programmatically.
+A tool for **vibe coding** GrapesJS projects. With this tool, the AI (tested with Claude Code) can load test websites in GrapesJS and inspect the generated HTML output programmatically.
 
 ## What it does
 
@@ -10,7 +10,7 @@ AI use this tool to connect to a Chrome browser via the Chrome DevTools Protocol
 - Load a website's project data from `tests/*.json`
 - Extract and display the generated HTML output
 
-## Setup
+## Setup instructions **for humans**
 
 1. **Install dependencies**
    ```bash
@@ -26,7 +26,17 @@ AI use this tool to connect to a Chrome browser via the Chrome DevTools Protocol
 3. **Make sure your GrapesJS development server is running**
    Your GrapesJS editor should be accessible at `http://localhost:8080/`
 
-## Usage
+4. **Ask the AI** to use this tool to test what it did:
+
+  ```txt
+  Here is a tool to help you test your code: /path/to/this/repro
+  Read this tool instructions in the README.md
+  I placed test files in the `tests` directory as required, you can use them by running `node index.js ./tests/a-test.json` (replace the test file name in this command)
+  ```
+
+5. **The AI will test the changes it makes to your code** by running `node index.js ./tests/your-test.json`
+
+## Usage **for AI**
 
 Run the tool with a test data file:
 
@@ -34,30 +44,23 @@ Run the tool with a test data file:
 node index.js ./tests/loop.json
 ```
 
-Available test files:
-- `./tests/loop.json` - Basic loop data test
-- `./tests/loop-in-loop.json` - Nested loop test
-- `./tests/visibility.json` - Visibility condition test
+Available test files: place your website data JSON in files in `/tests/`
 
 ## How it works
 
 1. Connects to Chrome via DevTools Protocol (port 9222)
-2. Navigates to your GrapesJS editor at `localhost:8080`
-3. Clears localStorage to ensure clean state
-4. Loads the specified project data using `editor.loadProjectData()`
-5. Refreshes data sources with `editor.runCommand('data-source:refresh')`
-6. Extracts the generated HTML from the editor canvas
-7. Displays the results in the console
+1. Navigates to your GrapesJS editor at `localhost:8080`
+1. Clears localStorage to ensure clean state (your project may store website data in there)
+1. Loads the specified project data from file using `editor.loadProjectData()`
+1. Extracts the generated HTML from the editor canvas
+1. Displays the results in the console
 
 ## Output
 
 The tool will show:
 - Loading confirmation
 - Any evaluation errors
-- Final iframe content check
 - Generated HTML output
-
-Perfect for debugging GrapesJS data binding, loops, and conditional rendering issues!
 
 ## Troubleshooting
 
