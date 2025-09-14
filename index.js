@@ -30,7 +30,6 @@ CDP(async (client) => {
         try {
           console.log('===>');
           await editor.loadProjectData(${JSON.stringify(projectData)});
-          editor.runCommand('data-source:refresh')
           console.log('RESULT:', editor.getWrapper().view.el.innerHTML);
         } catch (e) {
           console.error('EVAL ERROR:', e);
