@@ -29,9 +29,7 @@ AI use this tool to connect to a Chrome browser via the Chrome DevTools Protocol
 4. **Ask the AI** to use this tool to test what it did:
 
   ```txt
-  Here is a tool to help you test your code: /path/to/this/repro
-  Read this tool instructions in the README.md
-  I placed test files in the `tests` directory as required, you can use them by running `node index.js ./tests/a-test.json` (replace the test file name in this command)
+  Before I give you a task to do, here is a tool to help you test your code: /path/to/this/repo/ -- Read this tool instructions in the README.md. Chek the test files I placed in the `tests` directory as required, you can use them by running `node index.js ./tests/a-test.json` (replace the test file name in this command)
   ```
 
 5. **The AI will test the changes it makes to your code** by running `node index.js ./tests/your-test.json`
