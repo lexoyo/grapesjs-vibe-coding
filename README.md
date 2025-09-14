@@ -26,7 +26,8 @@ AI use this tool to connect to a Chrome browser via the Chrome DevTools Protocol
 3. **Make sure your GrapesJS development server is running**
    Your GrapesJS editor should be accessible at `http://localhost:8080/`
 
-4. **Ask the AI** to use this tool to test what it did:
+4. **Add tests** in `tests/*.json`. You can get the data with `editor.getProjectData()`
+5. **Ask the AI** to use this tool to test what it did:
 
   ```txt
   Before I give you a task to do, here is a tool to help you test your code: /path/to/this/repo/ -- Read this tool instructions in the README.md. Chek the test files I placed in the `tests` directory as required, you can use them by running `node index.js ./tests/a-test.json` (replace the test file name in this command)
