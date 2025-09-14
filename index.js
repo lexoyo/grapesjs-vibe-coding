@@ -9,6 +9,16 @@ CDP(async (client) => {
   await Runtime.enable()
   await DOM.enable()
 
+  // Listen to console events to capture debug logs
+  Runtime.consoleAPICalled((params) => {
+    const message = params.args.map(arg => {
+      if (arg.value !== undefined) return arg.value
+      if (arg.unserializableValue) return arg.unserializableValue
+      return arg.description || '[object]'
+    }).join(' ')
+    console.log('🌐 BROWSER:', message)
+  })
+
   console.log('Navigating to http://localhost:8080/')
   await Page.navigate({url: 'about:blank'})
   await Runtime.evaluate({
